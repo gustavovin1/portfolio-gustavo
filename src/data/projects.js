@@ -1,3 +1,5 @@
+import pokedexPreview from '../assets/pokedex-preview.png'
+
 export const projects = [
   {
     id: 'conselho-de-elrond-api',
@@ -54,7 +56,7 @@ export const projects = [
     ],
     github: 'https://github.com/gustavovin1/pokedex',
     demo: 'https://gustavovin1.github.io/pokedex/',
-    image: '/pokedex-preview.png',
+    image: pokedexPreview,
     visual: 'pokedex',
   },
 ]
