@@ -9,13 +9,16 @@ defineProps({
 
 <template>
   <article class="project-card" :class="{ 'project-card-featured': project.featured }">
-    <div class="project-visual" :class="`visual-${project.visual}`" aria-hidden="true">
-      <div v-if="project.featured" class="visual-api">
-        <div class="api-topline"><span></span><span></span><span></span><b>expeditions.api</b></div>
-        <div class="api-row"><span class="api-method">POST</span><span>/api/expeditions</span><span class="api-status">201</span></div>
-        <div class="api-code"><i>{</i><span>"protocol"</span>: <em>"8f2a...c41d"</em><br /><span>"status"</span>: <strong>"authorized"</strong><br /><i>}</i></div>
-      </div>
-      <div v-else class="project-glyph"><span>{{ project.name.slice(0, 1) }}</span><i></i><i></i><i></i></div>
+    <div class="project-visual" :class="`visual-${project.visual}`" :aria-hidden="project.image ? undefined : 'true'">
+      <img v-if="project.image" class="project-preview" :src="project.image" :alt="`Captura da interface do projeto ${project.name}`" loading="lazy">
+      <template v-else>
+        <div v-if="project.featured" class="visual-api">
+          <div class="api-topline"><span></span><span></span><span></span><b>expeditions.api</b></div>
+          <div class="api-row"><span class="api-method">POST</span><span>/api/expeditions</span><span class="api-status">201</span></div>
+          <div class="api-code"><i>{</i><span>"protocol"</span>: <em>"8f2a...c41d"</em><br /><span>"status"</span>: <strong>"authorized"</strong><br /><i>}</i></div>
+        </div>
+        <div v-else class="project-glyph"><span>{{ project.name.slice(0, 1) }}</span><i></i><i></i><i></i></div>
+      </template>
       <span class="visual-index">{{ project.featured ? 'API / 001' : project.id.slice(0, 3).toUpperCase() + ' / 00' }}</span>
     </div>
 

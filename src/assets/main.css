@@ -858,6 +858,15 @@ a:focus-visible {
   pointer-events: none;
 }
 
+.project-preview {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 65%;
+}
+
 .visual-resume {
   background-image: linear-gradient(rgba(207, 183, 159, 0.035) 1px, transparent 1px), linear-gradient(90deg, rgba(207, 183, 159, 0.035) 1px, transparent 1px);
 }
