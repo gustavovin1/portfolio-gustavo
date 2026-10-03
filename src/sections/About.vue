@@ -15,7 +15,7 @@ import { ArrowDownRight, Coffee } from 'lucide-vue-next'
           <span class="about-aside-note">Curitiba, Paraná<br />Brasil</span>
         </div>
         <div class="about-text reveal reveal-delay-1">
-          <p>Sou desenvolvedor PHP com experiência na sustentação de sistemas legados e no desenvolvimento de projetos atuais, atuando com correção de bugs, melhorias e implementação de novas funcionalidades.</p>
+          <p>Atuo na manutenção de sistemas legados desenvolvidos em PHP nativo 5.3 e na implementação de funcionalidades em aplicações atuais com Laravel. Também trabalho com correção de bugs, melhorias e sustentação de sistemas.</p>
           <p>Possuo experiência com ambientes Linux e Windows, utilizando Bash, PowerShell e SSH para suporte, configuração e diagnóstico de sistemas.</p>
           <p>Tenho interesse constante em desenvolvimento backend, frontend e infraestrutura. Também utilizo ferramentas de Inteligência Artificial como apoio no desenvolvimento de software, análise de problemas, debugging, pesquisa técnica, documentação e produtividade.</p>
           <p>Busco constantemente aprender novas tecnologias e melhorar a qualidade das soluções que desenvolvo.</p>

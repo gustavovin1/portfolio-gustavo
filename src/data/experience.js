@@ -1,8 +1,8 @@
 export const experience = [
   {
     number: '01',
-    title: 'Desenvolvimento PHP',
-    description: 'Implementação de funcionalidades e melhorias em aplicações, incluindo sistemas PHP legados.',
+    title: 'Manutenção e implementação PHP',
+    description: 'Manutenção de sistemas legados em PHP nativo 5.3 e implementação de funcionalidades em aplicações atuais com Laravel.',
     tags: ['PHP', 'MySQL', 'Git'],
   },
   {
