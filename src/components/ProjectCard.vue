@@ -44,8 +44,8 @@ defineProps({
           <a v-if="isConfiguredLink(project.github)" class="text-link" :href="project.github" target="_blank" rel="noreferrer">
             <Github :size="15" aria-hidden="true" /> GitHub
           </a>
-          <span v-else class="text-link is-unavailable" title="Configure o link do repositório em src/data/projects.js">
-            <LockKeyhole :size="14" aria-hidden="true" /> Repositório privado ou não informado
+          <span v-else class="text-link is-unavailable" title="O repositório deste projeto é privado.">
+            <LockKeyhole :size="14" aria-hidden="true" /> Projeto privado
           </span>
           <a v-if="isConfiguredLink(project.demo)" class="project-visit" :href="project.demo" target="_blank" rel="noreferrer" aria-label="Ver projeto">
             <span>Ver projeto</span><ArrowUpRight :size="16" aria-hidden="true" />
